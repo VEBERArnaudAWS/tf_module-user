@@ -1,5 +1,5 @@
 output "name" {
-  value = "${!var.bypass ? aws_iam_user.name : false}"
+  value = "${!var.bypass ? aws_iam_user.user.name : false}"
 }
 
 output "encrypted_password" {
