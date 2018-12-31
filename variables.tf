@@ -1,10 +1,8 @@
-variable "bypass" {
+variable "name" {
   type = "string"
-
-  default = false
 }
 
-variable "name" {
+variable "encoded_pgp_public_key" {
   type = "string"
 }
 
@@ -18,10 +16,6 @@ variable "with_programmatic_access" {
   type = "string"
 
   default = false
-}
-
-variable "encoded_pgp_public_key" {
-  type = "string"
 }
 
 variable "ssh_key" {
