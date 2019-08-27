@@ -1,5 +1,5 @@
 variable "bypass" {
-  type = string
+  type = bool
 }
 
 variable "name" {
@@ -11,13 +11,13 @@ variable "encoded_pgp_public_key" {
 }
 
 variable "with_console_access" {
-  type = string
+  type = bool
 
   default = false
 }
 
 variable "with_programmatic_access" {
-  type = string
+  type = bool
 
   default = false
 }
